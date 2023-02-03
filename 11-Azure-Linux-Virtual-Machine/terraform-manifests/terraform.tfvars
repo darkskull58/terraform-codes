@@ -1,6 +1,6 @@
-business_divsion = "hr"
-environment = "dev"
-resource_group_name = "rg"
+business_divsion = "soubtest"
+environment = "dsdev"
+resource_group_name = "soubrg"
 resource_group_location = "eastus"
 vnet_name = "vnet"
 vnet_address_space = ["10.1.0.0/16"]
