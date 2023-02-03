@@ -1,5 +1,6 @@
 # Starter pipeline
 
+
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -38,6 +39,17 @@ steps:
     command: 'apply'
     workingDirectory: '11-Azure-Linux-Virtual-Machine/terraform-manifests'
     environmentServiceNameAzureRM: 'LTIM_CLOUDLAB_SUB'
+- task: ManualValidation@0
+  inputs:
+    notifyUsers: 'basu.sourish58@gmail.com'
+    instructions: 'destroyResources'
+- task: TerraformTaskV3@3
+  inputs:
+    provider: 'azurerm'
+    command: 'destroy'
+    workingDirectory: '11-Azure-Linux-Virtual-Machine/terraform-manifests'
+    environmentServiceNameAzureRM: 'LTIM_CLOUDLAB_SUB'
+
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
