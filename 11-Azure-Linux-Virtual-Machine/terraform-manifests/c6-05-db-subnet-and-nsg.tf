@@ -1,5 +1,5 @@
 # Resource-1: Create DBTier Subnet
-resource "azurerm_subnet" "dbsubnet" {
+/*resource "azurerm_subnet" "dbsubnet" {
   name                 = "${azurerm_virtual_network.vnet.name}-${var.db_subnet_name}"
   resource_group_name  = azurerm_resource_group.rg.name
   virtual_network_name = azurerm_virtual_network.vnet.name
@@ -45,4 +45,4 @@ resource "azurerm_network_security_rule" "db_nsg_rule_inbound" {
   network_security_group_name = azurerm_network_security_group.db_subnet_nsg.name
 }
 
-
+*/
