@@ -39,10 +39,8 @@ steps:
     command: 'apply'
     workingDirectory: '11-Azure-Linux-Virtual-Machine/terraform-manifests'
     environmentServiceNameAzureRM: 'LTIM_CLOUDLAB_SUB'
-- task: ManualValidation@0
+- task: ManualIntervention@8
   inputs:
-    notifyUsers: 'basu.sourish58@gmail.com'
-    instructions: 'destroyResources'
 - task: TerraformTaskV3@3
   inputs:
     provider: 'azurerm'
