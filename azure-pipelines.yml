@@ -22,7 +22,7 @@ steps:
     provider: 'azurerm'
     command: 'init'
     workingDirectory: '11-Azure-Linux-Virtual-Machine/terraform-manifests'
-    backendServiceArm: 'LTIM_CLOUDLAB_SUB'
+    backendServiceArm: 'Azure subscription 1'
     backendAzureRmResourceGroupName: 'sourish_demo_rg'
     backendAzureRmStorageAccountName: 'terrastoragesourish'
     backendAzureRmContainerName: 'terrascripts'
