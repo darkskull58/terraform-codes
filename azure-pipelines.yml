@@ -32,13 +32,13 @@ steps:
     provider: 'azurerm'
     command: 'plan'
     workingDirectory: '11-Azure-Linux-Virtual-Machine/terraform-manifests'
-    environmentServiceNameAzureRM: 'LTIM_CLOUDLAB_SUB'
+    environmentServiceNameAzureRM: 'ARM_conn'
 - task: TerraformTaskV3@3
   inputs:
     provider: 'azurerm'
     command: 'apply'
     workingDirectory: '11-Azure-Linux-Virtual-Machine/terraform-manifests'
-    environmentServiceNameAzureRM: 'LTIM_CLOUDLAB_SUB'
+    environmentServiceNameAzureRM: 'ARM_conn'
 
 
 - script: |
