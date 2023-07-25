@@ -26,7 +26,7 @@ steps:
     backendAzureRmResourceGroupName: 'def_rg'
     backendAzureRmStorageAccountName: 'terrastoragesourish'
     backendAzureRmContainerName: 'terrascripts'
-    backendAzureRmKey: 'tf/terraform.tfstate'
+    backendAzureRmKey: 'INaUPnK6JOY2ENVaYrP+ZOXoft0nm5+0nyio1ASyhm4eeI4VRUbpEzfLtrpTDq19ouTcL1y8/XIj+AStLv8cRw=='
 - task: TerraformTaskV3@3
   inputs:
     provider: 'azurerm'
